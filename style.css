@@ -73,6 +73,7 @@ p {
     display: grid;
     grid-template-rows: repeat(2, 1fr) 25%;
     border-radius: var(--rad);
+    box-shadow: 0 0 3rem 0.1rem black;
     transition: 1s;
 }
 
