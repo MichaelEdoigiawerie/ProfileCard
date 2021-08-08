@@ -95,7 +95,7 @@ p {
     align-items: center;
     border-top: 0.5px solid var(--dgrey);
     border-radius: 0 0 var(--rad) var(--rad);
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .stats {
