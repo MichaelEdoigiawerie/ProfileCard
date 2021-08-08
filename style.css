@@ -1,0 +1,146 @@
+* {
+    --dgrey: hsl(0, 0%, 59%);
+    --dgblue: hsl(227, 10%, 46%);
+    --dcyan: hsl(185, 75%, 39%);
+    --desatbl: hsl(229, 23%, 23%);
+    --decoph: -35vh;
+    --decopw: -35vh;
+    --rad: 1rem;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    background: var(--dcyan);
+    font-family: 'Kumbh Sans', Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+h1, h2 {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1rem;
+    color: var(--desatbl);
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 0.9rem;
+    color: var(--desatbl);
+}
+
+h3 {
+    font-size: 0.8rem;
+    color: var(--dgblue);
+    font-weight: normal;
+    margin: 0.5rem 0 1rem;
+}
+
+p {
+    color: var(--dgblue);
+    font-size: 0.7rem;
+    margin: 0.5rem;
+}
+
+.deco {
+    position: absolute;
+    width: 30rem;
+    height: auto;
+    z-index: -1;
+}
+
+.deco-top {
+    top: var(--decoph);
+    left: var(--decopw);
+}
+
+.deco-bottom {
+    right: var(--decopw);
+    bottom: var(--decoph);
+}
+
+.profile-card {
+    margin: auto;
+    background: url("images/bg-pattern-card.svg");
+    width: 18rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 25%;
+    border-radius: var(--rad);
+    transition: 1s;
+}
+
+.card-header, .card-footer {
+    background: white;
+    display: flex;
+}
+
+.card-header {
+    grid-row: 2 / span 1;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card-footer {
+    grid-row: 3 / span 1;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0.5px solid var(--dgrey);
+    border-radius: 0 0 var(--rad) var(--rad);
+    padding: 1.5rem;
+}
+
+.stats {
+    text-align: center;
+}
+
+#profile-pic {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    border-radius: 5rem;
+    background: white;
+    height: 4.5rem;
+    border: 0.3rem solid white;
+}
+
+#age {
+    color: var(--dgblue);
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+/*Desktop Animation*/
+.profile-card:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 360px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1024px), (orientation: landscape) and (min-width: 1024px) {
+    * {
+        --decoph: -50vh;
+        --decoph: -50vh;
+    }
+    .deco {
+        width: 40rem;
+    }
+}
+
