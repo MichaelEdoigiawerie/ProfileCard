@@ -70,10 +70,11 @@ p {
     margin: auto;
     background: url("images/bg-pattern-card.svg");
     width: 18rem;
+    height: 19rem;
     display: grid;
-    grid-template-rows: repeat(2, 1fr) 25%;
+    grid-template-rows: repeat(2, 1fr) 22%;
     border-radius: var(--rad);
-    box-shadow: 0 0 3rem 0.1rem black;
+    box-shadow: 0 0 3rem 0.1rem rgb(70, 67, 67);
     transition: 1s;
 }
 
@@ -95,7 +96,7 @@ p {
     align-items: center;
     border-top: 0.5px solid var(--dgrey);
     border-radius: 0 0 var(--rad) var(--rad);
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .stats {
